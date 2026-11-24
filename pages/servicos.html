@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desculpas Express | Serviços</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Desculpas Express</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobre.html">Sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container text-center my-5">
+        <h1>Nossos serviços</h1>
+        <p>Escolha a situação e encontre sugestões de mensagens para cada imprevisto.</p>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="../img/atraso.jpg" class="card-img-top" alt="Atraso">
+                    <div class="card-body">
+                        <h5 class="card-title">Atraso de última hora</h5>
+                        <p class="card-text">Para avisar que você vai chegar atrasado a algum compromisso.</p>
+                        <p><strong>R$ 4,90</strong></p>
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalAtraso">Ver detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="../img/trabalho.jpg" class="card-img-top" alt="Trabalho esquecido">
+                    <div class="card-body">
+                        <h5 class="card-title">Trabalho esquecido</h5>
+                        <p class="card-text">Sugestões para explicar o atraso ou esquecimento de uma tarefa.</p>
+                        <p><strong>R$ 5,90</strong></p>
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalTrabalho">Ver detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="../img/compromisso.jpg" class="card-img-top" alt="Compromisso perdido">
+                    <div class="card-body">
+                        <h5 class="card-title">Compromisso perdido</h5>
+                        <p class="card-text">Para situações em que você não conseguiu comparecer.</p>
+                        <p><strong>R$ 3,90</strong></p>
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalCompromisso">Ver detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="../img/resposta.jpg" class="card-img-top" alt="Resposta atrasada">
+                    <div class="card-body">
+                        <h5 class="card-title">Resposta atrasada</h5>
+                        <p class="card-text">Para quando você demora para responder alguém.</p>
+                        <p><strong>R$ 2,90</strong></p>
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalResposta">Ver detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="../img/esquecimento.jpg" class="card-img-top" alt="Esquecimento geral">
+                    <div class="card-body">
+                        <h5 class="card-title">Esquecimento geral</h5>
+                        <p class="card-text">Mensagens para explicar pequenos esquecimentos do cotidiano.</p>
+                        <p><strong>R$ 4,50</strong></p>
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEsquecimento">Ver detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="../img/imprevistos.jpg" class="card-img-top" alt="Imprevistos">
+                    <div class="card-body">
+                        <h5 class="card-title">Imprevistos inesperados</h5>
+                        <p class="card-text">Sugestões para explicar situações que fugiram do planejado.</p>
+                        <p><strong>R$ 6,90</strong></p>
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalImprevistos">Ver detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modalAtraso" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Atraso de última hora</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Encontre maneiras de avisar que você vai chegar atrasado, sem deixar de ser educado.</p>
+                    <ul>
+                        <li>Sugestões formais.</li>
+                        <li>Mensagens descontraídas.</li>
+                        <li>Textos curtos e diretos.</li>
+                    </ul>
+                    <strong>Preço: R$ 4,90</strong>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modalTrabalho" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Trabalho esquecido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Veja sugestões para conversar sobre uma tarefa que foi esquecida ou entregue com atraso.</p>
+                    <ul>
+                        <li>Mensagens para professores.</li>
+                        <li>Pedidos de prazo.</li>
+                        <li>Formas educadas de explicar a situação.</li>
+                    </ul>
+                    <strong>Preço: R$ 5,90</strong>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modalCompromisso" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Compromisso perdido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Encontre mensagens para explicar por que não conseguiu comparecer a um compromisso.</p>
+                    <ul>
+                        <li>Mensagens de pedido de desculpas.</li>
+                        <li>Sugestões para remarcar.</li>
+                        <li>Textos formais e informais.</li>
+                    </ul>
+                    <strong>Preço: R$ 3,90</strong>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modalResposta" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Resposta atrasada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Para quando você demora para responder uma mensagem e não sabe como começar a conversa.</p>
+                    <ul>
+                        <li>Mensagens para amigos.</li>
+                        <li>Respostas para situações profissionais.</li>
+                        <li>Opções descontraídas.</li>
+                    </ul>
+                    <strong>Preço: R$ 2,90</strong>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="modalEsquecimento" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Esquecimento geral</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Encontre sugestões para explicar esquecimentos e pequenos imprevistos da rotina.</p>
+                    <ul>
+                        <li>Mensagens para amigos e familiares.</li>
+                        <li>Explicações simples.</li>
+                        <li>Pedidos de desculpas.</li>
+                    </ul>
+                    <strong>Preço: R$ 4,50</strong>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="modalImprevistos" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Imprevistos inesperados</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Veja ideias de mensagens para explicar situações inesperadas que mudaram seus planos.</p>
+                    <ul>
+                        <li>Mensagens para diferentes ocasiões.</li>
+                        <li>Explicações educadas.</li>
+                        <li>Sugestões para reorganizar compromissos.</li>
+                    </ul>
+                    <strong>Preço: R$ 6,90</strong>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <footer class="text-center p-4 bg-light">
+        <p class="mb-1">Desculpas Express</p>
+
+        <p class="mb-0">
+            © 2026.
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

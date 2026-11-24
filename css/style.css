@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+h1{
+    font-family: 'Playfair Display';
+    font-size: 55px;
+}
+
+h2{
+    font-family: 'Roboto Slab';
+}
+
+.navbar-brand{
+    font-family: 'Roboto Slab';
+}
+
+#inicio{
+    width: 450px;
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
