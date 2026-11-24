@@ -44,7 +44,7 @@
             <h2>Envie sua mensagem</h2>
 
         <form>
-            <div class="mb-3">
+            <div class="mb-3" >
                 <label for="nome" class="form-label">Nome completo</label>
                 <input type="text" class="form-control" id="nome" placeholder="Digite seu nome..." minlength="3" required>
             </div>
@@ -55,10 +55,24 @@
             </div>
 
             <div class="mb-3">
-                <label for="assunto" class="form-label">Assunto</label>
-                <input type="text" class="form-control" id="assunto" placeholder="Digite o assunto..." required>
+                <label for="assunto" class="form-label">Assunto - selecione</label>
+                <select class="form-control" name="assunto" id="assunto" required>
+                    <option value="duvida">Dúvidas sobre os serviços</option>
+                    <option value="sugestões">Sugestões</option>
+                    <option value="reclamações">Reclamações</option>
+                    <option value="parcerias">Parcerias</option>
+                    <option value="outros">Outros</option>
 
+                </select>
             </div>
+
+            <div class="mb-7">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <input type="text" class="form-control" id="mensagem" placeholder="Digite uma mensagem..." required>
+            </div>
+
+             <button type="submit" class="btn btn-warning my-4">Enviar mensagem</button>
+
         </form>
 
     </main>
