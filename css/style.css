@@ -9,6 +9,7 @@ h1{
 
 h2{
     font-family: 'Roboto Slab';
+    font-size: 40px;
 }
 
 .navbar-brand{
@@ -24,3 +25,15 @@ h2{
     object-fit: cover;
 }
 
+.btn-secondary:hover{
+    background-color: orange;
+}
+
+.btn-close:hover{
+    background-color: orange;
+}
+
+#inicio-sobre{
+    width: 450px;
+    margin-left: 50px;
+}
